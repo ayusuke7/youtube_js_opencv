@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OpenCV width JS</title>
-    <script src="libs/opencv.min.js"></script>
-
     <style>
-      #video-input,
-      #canvas-output {
+      #video,
+      #output {
         border: 1px solid black;
+        border-radius: 50%;
+        background-color: black;
+        margin-left: 20px;
       }
     </style>
+    <script src="libs/opencv.min.js"></script>
   </head>
   <body>
-    <label>Input CAM</label>
-    <video id="video-input" width="480px" height="320px"></video>
+    <video id="video" width="320px" height="320px"></video>
 
-    <label>Output OpenCV</label>
-    <canvas id="canvas-output" width="480px" height="320px"></canvas>
-    <script src="scripts.js"></script>
+    <canvas id="output" width="320px" height="320px"></canvas>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
